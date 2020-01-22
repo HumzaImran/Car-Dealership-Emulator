@@ -10,7 +10,7 @@ public class Car extends Vehicle implements Comparable<Car>
 {
   public static enum Model
   {
-	  SEDAN, SUV, SPORTS, MINIVAN;
+	  SEDAN__, SUV, SPORTS_, MINIVAN;
   }
   
   Model   model; 
@@ -21,7 +21,7 @@ public class Car extends Vehicle implements Comparable<Car>
   
   public Car()
   {
-	  this.model = Model.SEDAN;
+	  this.model = Model.SEDAN__;
   }
   
   public Car(String manuf, String color, Model model, Vehicle.PowerSource power, 
@@ -37,7 +37,7 @@ public class Car extends Vehicle implements Comparable<Car>
   
   public String display()
   {
-	  return super.display() + " " + model + " " + price + "$" + " SF: " + safetyRating + " RNG: " + maxRange;
+	  return super.display() + "     " + model + "   " + price + "$" + " SF:     " + safetyRating + " RNG:     " + maxRange;
   }
   
   public String toString()

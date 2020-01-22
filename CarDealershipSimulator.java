@@ -22,6 +22,10 @@ public class CarDealershipSimulator
 		
 	  
 	  Scanner scanner = new Scanner(System.in);
+	  openFile();
+      readFile();
+	  dealership.addCars(newCars);
+
 	  System.out.print(">");
 	  
 	  while (scanner.hasNextLine())
@@ -51,7 +55,6 @@ public class CarDealershipSimulator
 		  }
 		  else if (command.equals("BUY"))
 		  {
-		  	//checks for errors 
 		  	try{
 		  		
 			  carIndex = commandLine.nextInt(); 
@@ -59,7 +62,7 @@ public class CarDealershipSimulator
 			  if (receipt != null)
 			  {
 			    currentCar = dealership.getLastSoldCar();
-			    // System.out.println(receipt);
+
 			    System.out.println(receipt);
 			  }
 			  else
@@ -79,15 +82,6 @@ public class CarDealershipSimulator
 		  	} catch (Exception e) {
 		  		System.out.print("Invalid Vin");
 		  	}
-		  }
-
-		  else if (command.equals("ADD"))
-		  {
-		  	//function to open file and read in information 
-		  	openFile();
-		  	readFile();
-
-			dealership.addCars(newCars);
 		  }
 		  else if (command.equals("SPR"))
 		  {

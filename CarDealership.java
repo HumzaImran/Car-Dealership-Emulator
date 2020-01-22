@@ -65,25 +65,20 @@ public class CarDealership
 	  			int day = num.nextInt(20) + 1; 
 	  			GregorianCalendar calendar = new GregorianCalendar(2019, month, day);
 	  			double price = car.price;
-	  			// add to AccountingSystem
+
 	  			String receipt = accountingSystem.add(calendar, car, salesPerson, "BUY", price);
 	  			lastSoldCar = car;
 
-	  			//String add(Calendar date, Car car, String salesPerson, String type, double salePrice)
-	  			// add transaction
-	  			// sdf = new SimpleDateFormat("EEE, MMM dd, yyyy");
-	  			// Transaction transaction = new Transaction(calendar, car, salesPerson, "BUY", price);
 	  			return receipt;
 	  		}
   		}
 	return null;
 	  
   }
-  
+
   public String returnCar(int VIN)
   {
-	  // if (car !=null)
-		 //  cars.add(car);
+
   	if(VIN <100 || VIN > 499)
   	{
   		throw new IllegalArgumentException();	
@@ -100,11 +95,7 @@ public class CarDealership
 	  			int day = num.nextInt(20) + 1; 
 	  			GregorianCalendar calendar = new GregorianCalendar(2019, month, day);
 	  			double price = car.price;
-	  			// // add to AccountingSystem
 	  			String receipt = accountingSystem.add(calendar, car, salesPerson, "RET", price);
-	  			// lastSoldCar = car;
-	  			// sdf = new SimpleDateFormat("EEE, MMM dd, yyyy");
-	  			// Transaction transaction = new Transaction(calendar, car, salesPerson, "RET", price);
 	  			return (receipt);
 	  		}
   		}
@@ -127,8 +118,14 @@ public class CarDealership
 		
 		if (AWDFilter && !car.AWD)
 		   continue;
+		if(i < 10)
+		{
+			System.out.println(""+ i + "      " + car.display());
+		}
+		else if(i>9) {
+			System.out.println(""+ i + "     " + car.display());
+		}
 		
-		System.out.println(""+ i + " " + car.display());
 	  }
 	  System.out.println("");
   }
@@ -199,13 +196,13 @@ public class CarDealership
 	  	//SEDAN, SUV, SPORTS, MINIVAN;
 	  	Car.Model   model = null; 
 	  	Vehicle.PowerSource power = null;
-	  	if(carList[2].equals("SEDAN"))
+	  	if(carList[2].equals("SEDAN__"))
 	  	{
-	  		model = Car.Model.SEDAN;
+	  		model = Car.Model.SEDAN__;
 	  	}
-	  	if(carList[2].equals("SPORTS"))
+	  	if(carList[2].equals("SPORTS_"))
 	  	{
-	  		model = Car.Model.SPORTS;
+	  		model = Car.Model.SPORTS_;
 	  	}
 	  	if(carList[2].equals("SUV"))
 	  	{
@@ -232,25 +229,21 @@ public class CarDealership
 	  	//SEDAN, SUV, SPORTS, MINIVAN;
 	  	Car.Model   model = null; 
 	  	Vehicle.PowerSource power = null;
-	  	if(carList[2].equals("SEDAN"))
+	  	if(carList[2].equals("SEDAN__"))
 	  	{
-	  		model = Car.Model.SEDAN;
+	  		model = Car.Model.SEDAN__;
 	  	}
-	  	if(carList[2].equals("SPORTS"))
+	  	if(carList[2].equals("SPORTS_"))
 	  	{
-	  		model = Car.Model.SPORTS;
+	  		model = Car.Model.SPORTS_;
 	  	}
 	  	if(carList[2].equals("SUV"))
 	  	{
 	  		model = Car.Model.SUV;
 	  	}
-	  	if(carList[2] == "MINIVAN")
+	  	if(carList[2].equals("MINIVAN"))
 	  	{
 	  		model = Car.Model.MINIVAN;
-	  	}
-	  	if(carList[3].equals("MINIVAN"))
-	  	{
-	  		power = Vehicle.PowerSource.GAS_ENGINE;
 	  	}
 	  	if(carList[3].equals("ELECTRIC_MOTOR"))
 	  	{

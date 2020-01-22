@@ -26,6 +26,6 @@ public class ElectricCar extends Car
   
   public String display()
   {
-	  return super.display() + " " + "EL, BAT: " + batteryType + " RCH: " + rechargeTime;
+	  return super.display() + "     " + "EL, BAT:     " + batteryType + " RCH:     " + rechargeTime;
   }
 }

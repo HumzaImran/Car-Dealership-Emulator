@@ -36,7 +36,7 @@ public class Vehicle
 	
 	public String display()
 	{
-		return "VIN " + vin + " " + manuf + " " + color;
+		return "VIN   	" + vin + "   " + manuf + "     " + color;
 	}
 	
 	public boolean equals(Object other)
