@@ -1,10 +1,10 @@
 
-#CarDealershipEmulator
+# CarDealershipEmulator
  
-##About
+## About
 Car Dealership Emulator is programmed in Java. The program was created to perform a handful of functions which corelate with a car dealership.
 
-##Functions
+## Functions
 The letters below correspond with the commands that are associated with them. 
 ‘L’ – This function lists all cars available for sale.
 “SPR”- This function sorts the car list by price. 
