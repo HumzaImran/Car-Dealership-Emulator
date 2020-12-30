@@ -9,17 +9,17 @@ viewed using the 'L' command. Other sorting functions can also be applied to the
 sales team member is assigned.
 
 ## Functions
-The letters below correspond with the commands that are associated with them.   
-“FAW”- This function filters to only show cars that have all wheel drive.  
-“FCL”- This function clears all sorting filters that have been applied.
-“FEL”- This function filters to only show electric cars. 
-\n“FPR”- This function filters by price range. Range has to be entered after the FPR command. See example below.  
-‘L’ – This function lists all cars available for sale. 
-“SS”- This function display sales stats.  
-“ST”- This function display sales team. 
-“SPR”- This function sorts the car list by price.  
-“SMR”- This function sorts the car list in descending order by fuel range.  
-“SSR”-  This function sorts the car list by safety rating.  
+The letters below correspond with the commands that are associated with them.  <br /> 
+“FAW”- This function filters to only show cars that have all wheel drive.  <br />
+“FCL”- This function clears all sorting filters that have been applied.<br />
+“FEL”- This function filters to only show electric cars. <br />
+“FPR”- This function filters by price range. Range has to be entered after the FPR command. See example below.  <br />
+‘L’ – This function lists all cars available for sale. <br />
+“SS”- This function display sales stats.  <br />
+“ST”- This function display sales team. <br />
+“SPR”- This function sorts the car list by price.  <br />
+“SMR”- This function sorts the car list in descending order by fuel range.  <br />
+“SSR”-  This function sorts the car list by safety rating.  <br />
  
 ***Example code***
 FPR 1000 30000
