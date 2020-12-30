@@ -13,7 +13,7 @@ The letters below correspond with the commands that are associated with them.
 “FAW”- This function filters to only show cars that have all wheel drive.  
 “FCL”- This function clears all sorting filters that have been applied.
 “FEL”- This function filters to only show electric cars. 
-“FPR”- This function filters by price range. Range has to be entered after the FPR command. See example below.  
+\n“FPR”- This function filters by price range. Range has to be entered after the FPR command. See example below.  
 ‘L’ – This function lists all cars available for sale. 
 “SS”- This function display sales stats.  
 “ST”- This function display sales team. 
