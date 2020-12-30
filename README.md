@@ -21,15 +21,15 @@ The letters below correspond with the commands that are associated with them.  <
 “SMR”- This function sorts the car list in descending order by fuel range.  <br />
 “SSR”-  This function sorts the car list by safety rating.  <br />
  
-***Example code***
+***Example code***<br />
 FPR 1000 30000
  
-“BUY”- This function is used to buy cars, only one car can be bought at a time. Buying has to be done with the car’s vin number.  
-***Example code***
+“BUY”- This function is used to buy cars, only one car can be bought at a time. Buying has to be done with the car’s vin number.  <br />
+***Example code***<br />
 BUY 458 
 
-RET- This function is used to return cars. Only one car can be returned at a time. This function also requires the cars vin number.   
-***Example code***
+RET- This function is used to return cars. Only one car can be returned at a time. This function also requires the cars vin number.   <br />
+***Example code***<br />
 RET 458 
 
 
